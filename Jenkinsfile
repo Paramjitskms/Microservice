@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t paramjitskms/emailservice:latest ."
+                        sh "docker build -t paramjeet1967/emailservice:latest ."
                     }
                 }
             }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push paramjitskms/emailservice:latest "
+                        sh "docker push paramjeet1967/emailservice:latest "
                     }
                 }
             }
